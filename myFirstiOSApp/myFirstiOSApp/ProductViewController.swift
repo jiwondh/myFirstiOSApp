@@ -11,9 +11,10 @@ import UIKit
 class ProductViewController: UIViewController {
 
     @IBOutlet weak var ProductNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ProductNameLabel.text = "1937 Desk Phone"
     }
 }
