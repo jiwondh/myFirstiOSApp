@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="Xfh-ae-fja">
             <objects>
-                <viewController id="mzh-aN-HFc" sceneMemberID="viewController">
+                <viewController id="mzh-aN-HFc" customClass="ProductViewController" customModule="myFirstiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ZR-5C-NjB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="baj-hD-zFG"/>
                     </view>
+                    <connections>
+                        <outlet property="ProductNameLabel" destination="LqQ-Ru-0QW" id="tun-9y-fNa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLK-RS-1E3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
