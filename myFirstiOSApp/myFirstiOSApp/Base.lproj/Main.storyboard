@@ -56,6 +56,21 @@
             </objects>
             <point key="canvasLocation" x="0.80000000000000004" y="234.33283358320841"/>
         </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="hT8-F0-wH2">
+            <objects>
+                <viewController id="qhA-OJ-E7l" customClass="ContactViewController" customModule="myFirstiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rf4-l3-0mT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="rEd-Sx-h1D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LlG-hy-Hyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="244"/>
+        </scene>
     </scenes>
     <resources>
         <image name="button-addtocart" width="158" height="41"/>
