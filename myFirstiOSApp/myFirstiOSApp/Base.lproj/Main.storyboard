@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone-fullscreen3" translatesAutoresizingMaskIntoConstraints="NO" id="Wrs-9L-UHz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wrs-9L-UHz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -38,6 +38,9 @@
                                 <rect key="frame" x="81" y="193" width="212" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button-addtocart"/>
+                                <connections>
+                                    <action selector="addToCartPressed:" destination="mzh-aN-HFc" eventType="touchUpInside" id="VYf-iZ-ccv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,6 +48,8 @@
                     </view>
                     <connections>
                         <outlet property="ProductNameLabel" destination="LqQ-Ru-0QW" id="tun-9y-fNa"/>
+                        <outlet property="productImageView" destination="Wrs-9L-UHz" id="VvK-Cu-LEX"/>
+                        <outlet property="productNameLabel" destination="LqQ-Ru-0QW" id="ac0-p4-Aff"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLK-RS-1E3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -54,6 +59,5 @@
     </scenes>
     <resources>
         <image name="button-addtocart" width="158" height="41"/>
-        <image name="phone-fullscreen3" width="375" height="667"/>
     </resources>
 </document>
