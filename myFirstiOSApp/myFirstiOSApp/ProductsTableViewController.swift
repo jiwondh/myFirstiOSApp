@@ -10,6 +10,10 @@ import UIKit
 
 class ProductsTableViewController: UITableViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5;
     }
@@ -25,5 +29,13 @@ class ProductsTableViewController: UITableViewController {
     
     override open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "ShowProduct" {
+            let productVC = segue.destination as? ProductViewController
+            productVC?.productName = "Really old phone"
+        }
     }
 }
